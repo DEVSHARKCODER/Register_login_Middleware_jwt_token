@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Tailwind -->
+    <link  href="../Tailwinds/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fonts.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-10 w-full rounded-xl shadow-lg max-w-80">
+        <div class="text-center mb-6">
+            <h2 class="text-3xl font-extrabold text-gray-900">Login Account</h2>
+            <p class="text-gray-600 my-2">Please sign in to your account</p>
+        </div>
+        <form id="loginForm">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-medium mb-2" for="username">
+                    Username
+                </label>
+                <input class="shadow-sm appearance-none border border-gray-300 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" id="username" type="text" placeholder="Enter your username" >
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-medium mb-2" for="password">
+                    Password
+                </label>
+                <input class="shadow-sm appearance-none border border-gray-300 rounded-lg w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" id="password" type="password" placeholder="Enter your password" >
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="submit">
+                    Sign In
+                </button>
+                <a class="inline-block align-baseline font-medium text-sm text-blue-600 hover:text-blue-800" href="#">
+                    ลืมรหัสผ่าน ?
+                </a>
+            </div>
+        </form>
+        <div class="mt-6 text-center">
+            <p class="text-gray-600">Don't have an account? <a href="/register" class="text-blue-600 hover:text-blue-800 font-medium">Sign up</a></p>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+    
+   
+</body>
+</html>
